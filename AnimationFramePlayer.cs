@@ -17,7 +17,7 @@ public class AnimationFramePlayer : MonoBehaviour
     {
         if ( renderer == null ) renderer = GetComponent<MeshRenderer>();
 
-        if( renderer != null && frameData != null && currentPlayIndex == -1 )
+        if( renderer != null ) // && frameData != null && currentPlayIndex == -1 )
         {
             material = renderer.sharedMaterial;
 
